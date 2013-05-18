@@ -1,4 +1,4 @@
-package com.lol768.LiteKits.extensions;
+package com.lol768.LiteKits.extensions.commands;
 import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
