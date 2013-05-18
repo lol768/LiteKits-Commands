@@ -1,0 +1,8 @@
+name: LK-Commands
+version: 1.0
+description: A LiteKits extension that allows for kit selection using virtual commands rather than /kit select.
+author: lol768
+load: STARTUP
+main: com.lol768.LiteKits.extensions.commands.Commands
+database: false
+depend: [LiteKits]
