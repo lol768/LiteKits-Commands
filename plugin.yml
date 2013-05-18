@@ -5,4 +5,4 @@ author: lol768
 load: STARTUP
 main: com.lol768.LiteKits.extensions.commands.Commands
 database: false
-depend: [LiteKits]
+soft-depend: [LiteKits]
