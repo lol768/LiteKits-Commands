@@ -29,7 +29,7 @@ public class Commands extends JavaPlugin implements Listener {
     
     @EventHandler
     public void onCommand(PlayerCommandPreprocessEvent e) {
-        String kit = e.getMessage();
+        String kit = e.getMessage().substring(1);
         if (lk.kitExists(kit)) {
             if (!e.getPlayer().hasPermission("LiteKits.kit")) {
                 Messaging.sendPermissionsError(e.getPlayer(), lk.prefix);
@@ -40,6 +40,7 @@ public class Commands extends JavaPlugin implements Listener {
                     e.setCancelled(true);
                 } else {
                     lk.supplyKitToPlayer(kit, e.getPlayer());
+                    e.setCancelled(true);
                 }
             }
             
